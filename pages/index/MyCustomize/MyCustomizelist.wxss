@@ -1,0 +1,14 @@
+
+.MyCustomListText{
+    height:60rpx;
+    font-size:50rpx;
+    font-weight:700;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.MyCustomListTextBtn{
+    height:50rpx;
+    width:50rpx;
+}

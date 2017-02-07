@@ -1,0 +1,30 @@
+/* pages/index/MyCustomize/CustomizeList.wxss */
+.UserCustomize{
+    flex-direction: column;
+}
+.CustomForbody{
+    float:left;
+    height:60rpx;
+    font-size:40rpx;
+    margin:10rpx;
+}
+.CustomTime{
+    float:right;
+    height:60rpx;
+    font-size:40rpx;
+    margin:10rpx;
+}
+.CommentConfirmButton{
+   /* float:right;
+    height:80rpx;
+    width:150rpx; */
+    font-size:40rpx;
+    background-color:red;
+    margin:10rpx;
+}
+.CommentViewText{
+    text-align:center;
+    font-size:40rpx;
+    font-weight:700;
+    position:relative;
+}

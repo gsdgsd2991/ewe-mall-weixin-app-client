@@ -1,0 +1,14 @@
+<!--搭配展示与评价界面-->
+<view class="CommentViewText"><text>搭配评价</text></view>
+<scroll-view scroll-y="true" class="container">
+    <view class="CustomizeListView" wx:for="{{Customizes}}" wx:for-item="Customize" wx:key="Customize.time">
+        <view class="UserCustomize">
+            <text class="CustomForbody">{{Customize.body}}</text>
+            <text class="CustomTime">{{Customize.time}}</text>
+            <image src="{{Customize.imgSrc}}" class="CustomizeImg"></image>
+            <slider step="0.5" min="0" max="5" show-value value="{{Customize.Rate}}"/>
+            <input class="CustomizeComment" placeholder="请输入对该套搭配的评价">{{Customize.Comment}}</input>
+            <button class="CommentConfirmButton">确定</button>
+        </view>
+    </view>
+</scroll-view>

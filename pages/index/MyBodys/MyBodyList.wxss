@@ -1,0 +1,7 @@
+/* pages/index/select.wxss */
+.MyBodyListText{
+    text-align:center;
+    font-size:40rpx;
+    font-weight:700;
+    position:relative;
+}

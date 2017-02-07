@@ -1,0 +1,49 @@
+<!--选择体型界面-->
+<view class="container">
+  <view class="sex" class="sex">
+    <text class="sex-title">性别</text>
+    <radio-group bindchange="sexChanged">
+    <label wx:for="{{sexItems}}">
+        <radio value="{{sexItems.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    </radio-group>
+  </view>
+   <view class="height">
+    <text class="height-title">身高/cm</text>
+    <input class="height-input" placeholder="输入您要定制的身高" value="{{customerBody.height}}"></input>
+  </view>
+  <view class="weight">
+    <text class="weight-title">体重/kg</text>
+    <input class="weight-input" placeholder="输入您要定制的体重" value="{{customerBody.weight}}"></input>
+  </view>
+  <view class="body_shape">
+    <text class="body_shape-title">体型</text>
+    <radio-group bindchange="bodyChanged">
+    <label wx:for="{{bodyItems}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    </radio-group>
+  </view>
+  <view class="face_shape">
+    <text class="face_shape-title">脸型</text>
+    <radio-group bindchange="faceChanged">
+    <label wx:for="{{faceItems}}">
+        <radio value="{{faceItems.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    </radio-group>
+  </view>
+  <view class="face_color">
+    <text class="face_color-title">脸色</text>
+    <radio-group bindchange="colerChanged">
+    <label wx:for="{{colorItems}}">
+        <radio value="{{colorItems.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+    </radio-group>
+  </view>
+  <view class="figure_name">
+    <text class="figure_name-title">身材代号</text>
+    <input class="figure_input" placeholder="输入代号您下次可免于填写身材信息"></input>
+  </view>
+  <button class="confirm_button" bindtap="confirmButtonTaped">确认</button>
+  
+</view>

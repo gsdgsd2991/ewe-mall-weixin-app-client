@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/select",
+    "pages/index/MyCustomize/MyCustomizeList",
+    "pages/index/MyBodys/MyBodyList",
+    "pages/index/MyBodys/MyBodyList",
+    "pages/index/MyCustomize/CustomizeList"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "定制"
+    },
+    {
+      "pagePath":"pages/index/MyCustomize/MyCustomizeList",
+      "text":"我的定制"
+    },
+    {
+      "pagePath":"pages/index/MyBodys/MyBodyList",
+      "text":"个人信息"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

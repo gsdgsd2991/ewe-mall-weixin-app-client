@@ -1,0 +1,11 @@
+<!---定制展示界面-->
+<view  class="MyCustomListText"> 
+   <text class="MyCustomListTextTxt">我的定制</text>
+   <image src="http://download.easyicon.net/png/1191650/128/" class="MyCustomListTextBtn" mode="scaleToFill" bindtap="addCustom" />
+</view>
+<view class="MyBodyListSectioin">
+    <view class="MyCustomListShow" wx:for="{{CustomListItems}}" wx:for-item="item" wx:key="{{item.code}}" data-code="{{item.code}}" bindtap="CustomItemClicked">
+            <text class="CustomListItemsName">{{item.date}}</text>
+           
+    </view>
+</view>

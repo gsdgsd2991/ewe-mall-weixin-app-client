@@ -1,0 +1,9 @@
+<!--身材管理界面-->
+<view class="MyBodyListSection">
+<view  class="MyBodyListText">
+<text>我的身材管理</text>
+</view>
+    <view class="MyBodyListShow" wx:for="{{BodyListItems}}" wx:for-item="item" wx:key="{{item.customization_person_name}}" data-code="{{item.customization_person_name}}" bindtap="BodyItemClicked" bindlongtap="BodyItemLongTap" bindtouchstart="ontouchstart">
+            <text class="BodyListItemsName">{{item.customization_person_name}}</text>
+    </view>
+</view>
